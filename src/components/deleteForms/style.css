@@ -1,0 +1,44 @@
+/* Contêiner do DeleteForms alinhado à esquerda */
+.delete-forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   /* alinha no topo */
+    align-items: flex-start;       /* alinha à esquerda */
+    width: 300px;
+    padding: 20px;
+    margin-left: 40px;             /* ajuste a distância da borda esquerda */
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Título */
+.delete-forms h2 {
+    margin-bottom: 20px;
+}
+
+/* Formulário organizado */
+.delete-forms form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px; /* espaço entre elementos */
+}
+
+/* Inputs */
+.delete-forms input {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+/* Botão */
+.delete-forms button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #d8d8d8;
+    margin-top: 10px;
+}

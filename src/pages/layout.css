@@ -1,0 +1,9 @@
+.forms-container {
+    display: flex;
+    justify-content: center;   
+    align-items: baseline;   
+    gap: 150px;               
+    padding-top: 100px;        
+    width: 100%;
+}
+

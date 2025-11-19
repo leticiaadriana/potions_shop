@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Grid {
+  background: linear-gradient(180deg, #0C152B 0%, #141F37 40%, #133146 70%, #1f4e70 100%);
+  border-color: white;
+  box-shadow: 0 0 50px rgb(0, 0, 0);
+  width: 55%;
+  margin: 60px auto 0;
+  padding: 50px 90px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8%;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilos individuais do card de poção */
+.potion-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.potion-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.potion-image-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.potion-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.potion-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.potion-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #FFFFFF;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.potion-description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+  margin: 0;
+  min-height: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.potion-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFD700;
+  margin: 10px 0;
+}
+
+.buy-button {
+  background: #004C8D;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 76, 141, 0.4);
+}
+
+.buy-button:hover {
+  background: #0066B8;
+  box-shadow: 0 6px 20px rgba(0, 102, 184, 0.6);
+  transform: scale(1.05);
+}
+
+.Grid > button {
+  background: #004C8D;
+  border-radius: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  height: 50px;
+  width: 250px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Grid > button:hover {
+  background: #0066B8;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .Grid {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 40px 60px;
+  }
+
+  .card {
+    gap: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Grid {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .potion-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
